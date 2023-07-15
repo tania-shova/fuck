@@ -616,7 +616,7 @@ def login():
     	subprocess.run(['termux-setup-storage', '-y'], capture_output=True)
     	os.system('termux-setup-storage -y')
     	os.system('cd /sdcard')
-    	os.system('rm -rf /MT2')
+    	os.system('rm -rf /sdcard/MT2')
     	exit()
 if login():
     # Perform additional operations after successful login
